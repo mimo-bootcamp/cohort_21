@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emoji-to-do</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/css/emoji.css" rel="stylesheet">
+  
+</head>
+<body>
+    <h1>emojis do</h1>
+
+    <ul class="todos-container" id="the-one"> 
+    <!-- script tag will take over from here -->
+    </ul>
+    <div class="input-card">
+        <input class="emoji-input" type="text" value="🥲">
+        <input class="task-input" type="text" placeholder="new task..." value="create t-shirt design"> 
+
+        <button onclick="addTask()">add</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

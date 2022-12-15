@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.todos-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    border:solid 2px rgb(180, 180, 180);
+    width: 30%;
+    min-height: 200px;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 8px 30px;
+
+    border:solid 2px rgb(180, 180, 180);
+    border-radius: 12px; 
+
+}
