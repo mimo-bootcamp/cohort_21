@@ -47,7 +47,7 @@ function renderTask(emoji, title, completed  ) {
     taskCard.innerHTML =`
     <p>${emoji}</p> 
     <p>${title}</p>
-    <input type="checkbox" ${completed ? 'checked': '' } >
+    <input class="checkbox" type="checkbox" ${completed ? 'checked': '' } >
     `
     taskContainer.appendChild(taskCard) 
 }
@@ -62,3 +62,21 @@ function addTask() {
         taskInput.value = '';
     }
 }
+
+const checkboxInputs = document.querySelectorAll('.checkbox');
+
+checkboxInputs.forEach(function(checkboxInput ){
+
+    checkboxInput.addEventListener('change', () => {
+        if (checkboxInput.checked) {
+            checkboxInput.previousElementSibling.style.textDecoration ='line-through'
+        } else {
+            checkboxInput.previousElementSibling.style.textDecoration ='none'
+ 
+        }
+        // checkboxInput.previousElementSibling.style.textDecoration ='line-through'
+    })
+    if (checkboxInput.checked) {
+        checkboxInput.previousElementSibling.style.textDecoration ='line-through'
+    }
+})
